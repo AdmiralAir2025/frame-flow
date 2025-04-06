@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Handle video upload
+    // Handle video upload simulation
     const uploadForm = document.getElementById('uploadForm');
     if (uploadForm) {
         uploadForm.addEventListener('submit', function (event) {
@@ -27,12 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const videoFile = document.getElementById('videoFile').files[0];
             const thumbnailFile = document.getElementById('thumbnailFile').files[0];
             if (videoFile && thumbnailFile) {
-                // Handle file upload (e.g., display a message or store in localStorage)
-                console.log('Video file:', videoFile);
-                console.log('Thumbnail file:', thumbnailFile);
+                // Simulate file upload
+                alert(`Video file: ${videoFile.name}\nThumbnail file: ${thumbnailFile.name}`);
             }
         });
     }
+});
+
 
     // Dynamically load videos in the gallery (example)
     const videoGallery = document.getElementById('videoGallery');
