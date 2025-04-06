@@ -37,17 +37,21 @@
     <div class="container my-4">
         <h1 class="mb-4">Video Gallery</h1>
         <div class="row" id="videoGallery">
-            <!-- Example Video Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="static/thumbnails/example.jpg" class="card-img-top" alt="Thumbnail">
-                    <div class="card-body">
-                        <h5 class="card-title">Video Title</h5>
-                        <a href="static/uploads/example.mp4" class="btn btn-primary">Watch Video</a>
-                    </div>
+            <!-- Video cards will be dynamically inserted here -->
+        </div>
+        <div class="mt-4">
+            <h2>Upload a New Video</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="videoFile">Select Video File</label>
+                    <input type="file" class="form-control" id="videoFile" name="videoFile" accept="video/*">
                 </div>
-            </div>
-            <!-- More video cards can be added here -->
+                <div class="form-group">
+                    <label for="thumbnailFile">Select Thumbnail</label>
+                    <input type="file" class="form-control" id="thumbnailFile" name="thumbnailFile" accept="image/*">
+                </div>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
