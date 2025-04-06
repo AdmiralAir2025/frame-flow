@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Gallery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -18,14 +19,40 @@
                     <a class="nav-link" href="gallery.html">View Gallery</a>
                 </li>
             </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-item form-switch">
+                            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                            <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="container">
-        <h1 class="my-4">Video Gallery</h1>
-        <div id="videoGallery" class="row">
-            <!-- Videos will be dynamically inserted here -->
+    <div class="container my-4">
+        <h1 class="mb-4">Video Gallery</h1>
+        <div class="row" id="videoGallery">
+            <!-- Example Video Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="static/thumbnails/example.jpg" class="card-img-top" alt="Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Video Title</h5>
+                        <a href="static/uploads/example.mp4" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <!-- More video cards can be added here -->
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
