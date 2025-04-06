@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Video Gallery</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="upload.html">Upload Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">View Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="my-4">Upload Video</h1>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="videoFile">Select Video File</label>
+                <input type="file" class="form-control" id="videoFile" name="videoFile" accept="video/*">
+            </div>
+            <div class="form-group">
+                <label for="thumbnailFile">Select Thumbnail</label>
+                <input type="file" class="form-control" id="thumbnailFile" name="thumbnailFile" accept="image/*">
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
