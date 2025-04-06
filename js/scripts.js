@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+});
+
+        toggleSwitch.addEventListener('change', function () {
+            if (this.checked) {
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light-mode');
+            }
+        });
+    }
 
     // Handle video upload simulation
     const uploadForm = document.getElementById('uploadForm');
